@@ -98,6 +98,9 @@ export const DATA: Content = {
         "Gemini API for conversational reasoning and tool/function calling.",
         "Migrated the real-time call pipeline to LiveKit’s WebRTC infrastructure.",
       ],
+      img: "/images/projects/zavigo.png",
+      live: "https://zavigo.space",
+      code: "",
     },
     {
       name: "Ashirwad CRM",
@@ -113,6 +116,9 @@ export const DATA: Content = {
         "Conditional rendering instead of per-role codebases.",
         "Inventory tracking for flats across 10 projects or towers.",
       ],
+      img: "/images/projects/ashirwad.png",
+      live: "https://ccms1.netlify.app",
+      code: "",
     },
     {
       name: "Zakkuu",
@@ -135,6 +141,9 @@ export const DATA: Content = {
         "Upload, enhancement and listing-update pipeline.",
         "Panel UI and backend, deployed for 5 seller accounts.",
       ],
+      img: "/images/projects/zakkuu.png",
+      live: "https://zakkuu.com",
+      code: "",
     },
     {
       name: "Sports Livv",
@@ -173,6 +182,9 @@ export const DATA: Content = {
         "Host-controlled participant access.",
         "mediasoup/WebRTC for media, Socket.io for coordination.",
       ],
+      img: "/images/projects/meetmeall.png",
+      live: "https://meetmeall.com",
+      code: "",
     },
     {
       name: "OneBanking",
@@ -188,6 +200,9 @@ export const DATA: Content = {
         "Gamified registration and lead capture.",
         "Frontend, backend and deployment.",
       ],
+      img: "/images/projects/onebanking.png",
+      live: "https://onebanking.app",
+      code: "",
     },
     {
       name: "Study Notion",
@@ -204,8 +219,10 @@ export const DATA: Content = {
         "Paid enrolment and learning progress tracking.",
         "Instructor analytics dashboard.",
       ],
+      img: "/images/projects/studynotion.png",
+      live: "https://study-notion-2492.onrender.com",
+      code: "https://github.com/SagarSharma656/Study-Notion",
     },
-    /* optional per project: role:"…", links:[["Live","https://…"],["Code","https://…"]] */
   ],
   skills: [
     {

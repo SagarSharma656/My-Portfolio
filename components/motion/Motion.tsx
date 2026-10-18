@@ -20,6 +20,7 @@ export default function Motion() {
       const tr = document.querySelector<HTMLElement>("#plist")!,
         hs = document.querySelector<HTMLElement>(".hs")!,
         len = () => tr.scrollWidth - hs.clientWidth;
+
       const tw = gsap.to(tr, {
         x: () => -len(),
         ease: "none",

@@ -6,9 +6,8 @@ import { placeholder } from "@/lib/placeholder";
 const items = DATA.projects.map((p) => ({
   ...p,
   img: p.img ?? placeholder(p.name),
-  live: p.live ?? "https://example.com/live",
-  code: p.code ?? "https://example.com/code",
 }));
+
 const pad = (n: number) => String(n).padStart(2, "0");
 
 export default function Projects() {
@@ -18,7 +17,9 @@ export default function Projects() {
     const d = ref.current;
     if (d && sel !== null && !d.open) d.showModal();
   }, [sel]);
+
   const p = sel === null ? null : items[sel];
+
   return (
     <>
       <div className="hs">
@@ -44,12 +45,16 @@ export default function Projects() {
                   <p className="mono">{q.stack.join(" · ")}</p>
                   {q.out && <p className="out">{q.out}</p>}
                   <div className="cl">
-                    <a href={q.live} rel="noopener">
-                      Live ↗
-                    </a>
-                    <a href={q.code} rel="noopener">
-                      Code ↗
-                    </a>
+                    {q?.live && (
+                      <a href={q.live} rel="noopener">
+                        Live ↗
+                      </a>
+                    )}
+                    {q?.code && (
+                      <a href={q.code} rel="noopener">
+                        Code ↗
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -98,13 +103,21 @@ export default function Projects() {
             <p className="mono">{p.stack.join(" · ")}</p>
             <h3 className="k">Links</h3>
             <p>
-              <a href={p.live} rel="noopener">
-                Live ↗
-              </a>{" "}
-              ·{" "}
-              <a href={p.code} rel="noopener">
-                Code ↗
-              </a>
+              {
+                p.live && (
+                  <a href={p.live} rel="noopener">
+                    Live ↗
+                  </a>
+                )
+              }{"  "}
+              {
+                p.code && (
+                  <a href={p.code} rel="noopener">
+                    Code ↗
+                  </a>
+                ) 
+              }
+          
             </p>
           </>
         )}
