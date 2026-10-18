@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title,
   description,
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+  },
   alternates: { canonical: "/" },
   openGraph: { title, description, type: "profile", url: "/" },
 };
@@ -66,7 +72,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
         />
         <div id="pre" aria-hidden="true">
-          <b style={{marginBottom: 50}}>SK</b>
+          <b style={{ marginBottom: 50 }}>SK</b>
           <i />
         </div>
         <div id="bar" />
@@ -83,9 +89,7 @@ export default function RootLayout({
         <canvas id="gl" aria-hidden="true" />
         {children}
         <footer>
-          <p className="k">
-            © 2026 Sagar Kumar · Open to Work
-          </p>
+          <p className="k">© 2026 Sagar Kumar · Open to Work</p>
         </footer>
       </body>
     </html>
