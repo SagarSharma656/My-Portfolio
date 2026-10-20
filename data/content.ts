@@ -298,31 +298,31 @@ export const DATA: Content = {
     {
       v: "30%",
       l: "lower voice-response latency",
-      s: "Zavigo, after moving to LiveKit",
+      s: "After moving to LiveKit",
     },
     { v: "60%", l: "less manual inventory tracking", s: "Ashirwad CRM" },
     {
       v: "90%",
       l: "less photo-editing time",
-      s: "Zakkuu, across 5 seller accounts",
+      s: "Across many seller accounts",
     },
-    { v: "10,000+", l: "waitlist signups", s: "OneBanking marketing site" },
+    { v: "10,000+", l: "waitlist signups", s: "On marketing site" },
   ],
   offers: [
     {
       t: "Build complete products",
       d: "From database schema to React screens to deployment.",
-      p: "Ashirwad CRM, Study Notion",
+      p: "Study Notion",
     },
     {
       t: "Add AI to real workflows",
       d: "Voice, language models and image tools inside working products.",
-      p: "Zavigo, Zakkuu",
+      p: "",
     },
     {
       t: "Ship real-time features",
       d: "Live calls, chat, video and score updates that stay in sync.",
-      p: "Sports Livv, Meet Me All, Zavigo",
+      p: "",
     },
     {
       t: "Take apps live",
